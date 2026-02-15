@@ -1,9 +1,9 @@
 import React, { cloneElement, useEffect, useState } from "react";
 import toast, { LoaderIcon } from "react-hot-toast";
-import { useParams, useNavigate } from "react-router";
+import { useParams, useNavigate } from "react-router-dom";
 import api from "../lib/axios";
 import { ArrowLeft, HandHelping, Loader, Trash } from "lucide-react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const NoteDetailPage = () => {
   const [note, setNote] = useState(null);
